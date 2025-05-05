@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ENLIGHTENED SERVICES</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="static/img/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="static/css/style.css" rel="stylesheet">
+	<style>	
+		 /* Change the font color for the form text */
+		form {
+		  color: #053679; /* This is a purple color, change to any color you prefer */
+		}
+
+		form .form-label, 
+		form .form-control {
+		  color: #053679; /* Change form labels and input text color */
+		}
+
+		form .btn-primary {
+		  background-color: #2DC997; /* Change button background color */
+		  border-color: #2DC997; /* Change button border color */
+		}
+		form .btn:hover {
+  		  background-color: #2DC997; /* prevents blue on hover */
+		  border-color: #2DC997;
+		}
+
+		.logo-pop {
+		  width: 100px;
+		  margin-bottom: 20px;
+		  opacity: 0;
+		  transform: translateY(30px);
+		  animation: popUp 1.2s ease-out forwards;
+		}
+
+		/* Keyframes for lifting pop-up */
+		@keyframes popUp {
+		  0% {
+		    opacity: 0;
+		    transform: translateY(30px) scale(0.8);
+		  }
+		  60% {
+		    opacity: 1;
+		    transform: translateY(-10px) scale(1.05);
+		  }
+		  100% {
+		    opacity: 1;
+		    transform: translateY(0) scale(1);
+		  }
+		}
+	
+	</style>
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+      <div id="logo" class="pull-left">
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="http://127.0.0.1:5050"></a>Home</li>
+          <li><a href="https://www.bbb.org/us/fl/homestead/profile/junk-removal/enlightened-miscellaneous-services-llc-0633-92041666/leave-a-review">Rate us</a></li>
+          <li><a href="https://www.bbb.org/us/fl/homestead/profile/junk-removal/enlightened-miscellaneous-services-llc-06#2DC99733-92041666/customer-reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--==========================
+  Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <img src="static/img/logo.png" alt="Logo" class="logo-pop" style="width: 200px; height: auto;" />
+      <h1>Enlightened MISCELLANEOUS SERVICES LLC</h1>
+      <h2 style="color:#2DC997;" id="hero_h2">Junk removal & Hauling.</h2>
+    </div>
+
+  </section>
+
+  <!--==========================
+  Main Section
+  ============================-->
+  <main id="main">
+    <section class="bg-dark text-white py-5">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h1 style="color:#FFFFFF;">-> Discover more about our services below</h1>
+          <p class="section-description" style="color:#FFFFFF; text-align: left; margin-left: 50px;">GET A FREE QUOTE TODAY!</p>
+        </div>
+		        <!-- Start of Form -->
+		<form action="https://script.google.com/macros/s/AKfycbxkcomYsJSF_E9RQvaXB5WBwMfDlLFvLmKKlsOcDkWzBMdbn16RQS0uW0HvUBRiGqcA/exec" method="POST" id="myForm">
+		  <label for="service-select" style="color:#FFFFFF;"class="form-label fw-bold">Select a Service:</label>
+		  <select id="service-select" class="form-select mb-4" onchange="showFieldset(this.value)">
+		    <option value="">-- Please choose an option --</option>
+		    <option value="furniture">Furniture Removal</option>
+		    <option value="yard">Yard Waste Removal</option>
+		    <option value="appliance">Appliance Removal</option>
+		    <option value="tire">Tire Disposal</option>
+		    <option value="hottub">Hot Tub Disposal</option>
+		    <option value="mattress">Mattress Disposal</option>
+		    <option value="shed">Shed Removal</option>
+		    <option value="tree">Tree & Bush Removal</option>
+		    <option value="concrete">Concrete Removal</option>
+		    <option value="dirt">Dirt/Rock Removal</option>
+		    <option value="foreclosure">Foreclosure Cleanout</option>
+		    <option value="garage">Garage Cleanout</option>
+		  </select>
+
+		  <div id="furniture" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Furniture Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="furniture_location">Location</label>
+		        <input type="text" class="form-control" name="furniture_location" id="furniture_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="furniture_material">Material</label>
+		        <input type="text" class="form-control" name="furniture_material" id="furniture_material">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="yard" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Yard Waste Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="yard_location">Location</label>
+		        <input type="text" class="form-control" name="yard_location" id="yard_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="yard_material">Material</label>
+		        <input type="text" class="form-control" name="yard_material" id="yard_material">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="appliance" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Appliance Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="appliance_location">Location</label>
+		        <input type="text" class="form-control" name="appliance_location" id="appliance_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="appliance_size">Size</label>
+		        <input type="text" class="form-control" name="appliance_size" id="appliance_size">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="tire" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Tire Disposal</legend>
+		      <div class="form-group mb-3">
+		        <label for="tire_size">Size</label>
+		        <input type="text" class="form-control" name="tire_size" id="tire_size">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="tire_location">Location</label>
+		        <input type="text" class="form-control" name="tire_location" id="tire_location">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="hottub" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Hot Tub Disposal</legend>
+		      <div class="form-group mb-3">
+		        <label for="hottub_location">Location</label>
+		        <input type="text" class="form-control" name="hottub_location" id="hottub_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="hottub_size">Size</label>
+		        <input type="text" class="form-control" name="hottub_size" id="hottub_size">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="mattress" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Mattress Disposal</legend>
+		      <div class="form-group mb-3">
+		        <label for="mattress_size">Size</label>
+		        <input type="text" class="form-control" name="mattress_size" id="mattress_size">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="mattress_location">Location</label>
+		        <input type="text" class="form-control" name="mattress_location" id="mattress_location">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="shed" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Shed Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="shed_size">Size</label>
+		        <input type="text" class="form-control" name="shed_size" id="shed_size">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="shed_material">Material</label>
+		        <input type="text" class="form-control" name="shed_material" id="shed_material">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="shed_location">Location</label>
+		        <input type="text" class="form-control" name="shed_location" id="shed_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="shed_labor">Labor</label>
+		        <input type="text" class="form-control" name="shed_labor" id="shed_labor">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="tree" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Tree & Bush Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="tree_location">Location</label>
+		        <input type="text" class="form-control" name="tree_location" id="tree_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="tree_volume">Volume</label>
+		        <input type="text" class="form-control" name="tree_volume" id="tree_volume">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="concrete" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Concrete Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="concrete_location">Location</label>
+		        <input type="text" class="form-control" name="concrete_location" id="concrete_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="concrete_volume">Volume</label>
+		        <input type="text" class="form-control" name="concrete_volume" id="concrete_volume">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="concrete_labor">Labor</label>
+		        <input type="text" class="form-control" name="concrete_labor" id="concrete_labor">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="dirt" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Dirt/Rock Removal</legend>
+		      <div class="form-group mb-3">
+		        <label for="dirt_labor">Labor</label>
+		        <input type="text" class="form-control" name="dirt_labor" id="dirt_labor">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="dirt_location">Location</label>
+		        <input type="text" class="form-control" name="dirt_location" id="dirt_location">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="foreclosure" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Foreclosure Cleanout Services</legend>
+		      <div class="form-group mb-3">
+		        <label for="foreclosure_volume">Volume</label>
+		        <input type="text" class="form-control" name="foreclosure_volume" id="foreclosure_volume">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="foreclosure_location">Location</label>
+		        <input type="text" class="form-control" name="foreclosure_location" id="foreclosure_location">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <div id="garage" class="service-fieldset" style="display:none">
+		    <fieldset class="form-group border p-3 rounded">
+		      <legend class="w-auto px-2">Garage Cleanout Services</legend>
+		      <div class="form-group mb-3">
+		        <label for="garage_location">Location</label>
+		        <input type="text" class="form-control" name="garage_location" id="garage_location">
+		      </div>
+		      <div class="form-group mb-3">
+		        <label for="garage_volume">Volume</label>
+		        <input type="text" class="form-control" name="garage_volume" id="garage_volume">
+		      </div>
+		    </fieldset>
+		  </div>
+
+		  <button type="submit" class="btn btn-primary mt-3" id="submit-button" style="display: none;">
+			  Send info
+		  </button>
+
+		</form>
+
+        <!-- End of Form -->
+
+      </div>
+    </section>
+	
+	<section id="junk-removal" class="py-5 bg-light">
+	  <div class="container text-center">
+
+	    <h2 class="text-success mb-3" style="color: #2DC997;">
+	      Your Trash, in My Stash.
+	    </h2>
+
+	    <p class="lead mb-4 text-dark">
+	      We’re here to make your junk removal process smooth and stress-free. Our pricing typically ranges from
+	      <strong>$95 to $800</strong>, depending on the specifics of your situation. If we need to navigate challenges
+	      like <strong>long carries</strong>, <strong>stairs</strong>, or other obstacles, we'll work with you to
+	      finalize the details — and in many cases, <strong>lower your price</strong>.
+	    </p>
+
+	    <p class="lead mb-4 text-dark">
+	      We also provide reliable <strong>handyman and labor services</strong> to help with anything else you need.
+	    </p>
+
+	    <p class="lead mb-4 text-dark">
+	      📸 <em>Send us pictures or a video</em> of your pile-up to get a quick quote.
+	    </p>
+
+	    <p class="lead mb-4 text-dark">
+	      With years of experience under our belt, we are hands down the
+	      <strong>most trusted junk haulers in Miami</strong>.
+	    </p>
+
+	    <h4 class="text-success">
+	      Residential &nbsp;•&nbsp; Commercial &nbsp;•&nbsp; Industrial
+	    </h4>
+
+	  </div>
+	</section>
+
+
+		<div class="d-flex justify-content-center mb-2 mt-2 JK-HubSpotCallToAction">
+		  <!-- HubSpot Call-to-Action Code -->
+		  <!--[if lte IE 8]>
+		    <div id="hs-cta-ie-element"></div>
+		  <![endif]-->
+		  
+		  <a href="http://cta-redirect.hubspot.com/cta/redirect/597712/454275db-ffde-4c16-ae45-19a4a6f31697">
+		    <img
+		      src="https://no-cache.hubspot.com/cta/default/597712/454275db-ffde-4c16-ae45-19a4a6f31697.png"
+		      alt="Learn More About Items We Take"
+		    />
+		  </a>
+		  <!-- End HubSpot Call-to-Action Code -->
+		</div>
+
+		<!-- End_Module_2270 -->
+		<div class="clear"></div>
+
+  </main>
+
+  <!--==========================
+  Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container"></div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>ENLIGHTENED MISCELLANEOUS SERVICES LLC</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed using <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="static/lib/jquery/jquery.min.js"></script>
+  <script src="static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/lib/easing/easing.min.js"></script>
+  <script src="static/lib/wow/wow.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
+  <script src="static/lib/counterup/counterup.min.js"></script>
+  <script src="static/lib/superfish/hoverIntent.js"></script>
+  <script src="static/lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="static/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="static/js/main.js"></script>
+
+	<script>
+		  function showFieldset(id) {
+		    // Hide all fieldsets
+		    document.querySelectorAll('.service-fieldset').forEach(div => {
+		      div.style.display = 'none';
+		    });
+
+		    // Show the selected fieldset if valid
+		    if (id) {
+		      const target = document.getElementById(id);
+		      if (target) {
+		        target.style.display = 'block';
+		      }
+		      // Show the submit button
+		      document.getElementById("submit-button").style.display = "inline-block";
+		    } else {
+		      // Hide the submit button if no option is selected
+		      document.getElementById("submit-button").style.display = "none";
+		    }
+		  }
+	
+		    function showFieldset(value) {
+		      document.querySelectorAll('.service-fieldset').forEach(el => el.style.display = 'none');
+		      const btn = document.getElementById('submit-button');
+		      if (value) {
+		        const section = document.getElementById(value);
+		        if (section) {
+		          section.style.display = 'block';
+		          btn.style.display = 'inline-block';
+		        }
+		      } else {
+		        btn.style.display = 'none';
+		      }
+		    }
+
+		    document.getElementById('myForm').addEventListener('submit', async function(e) {
+		      e.preventDefault();
+
+		      const selectedService = document.getElementById("service-select").value;
+		      if (!selectedService) {
+		        alert("Please select a service.");
+		        return;
+		      }
+
+		      const section = document.getElementById(selectedService);
+		      const inputs = section.querySelectorAll("input");
+		      const data = { service: selectedService };
+
+		      inputs.forEach(input => {
+		        const key = input.name.split('_')[1]; // e.g., "location"
+		        data[key] = input.value;
+		      });
+
+		      try {
+		        const response = await fetch("https://script.google.com/macros/s/AKfycbxkcomYsJSF_E9RQvaXB5WBwMfDlLFvLmKKlsOcDkWzBMdbn16RQS0uW0HvUBRiGqcA/exec", {
+		          method: "POST",
+		          body: JSON.stringify(data),
+		          headers: {
+		            "Content-Type": "application/json"
+		          }
+		        });
+
+		        const result = await response.text();
+		        alert("Form submitted: " + result);
+		        e.target.reset();
+		        document.querySelectorAll('.service-fieldset').forEach(el => el.style.display = 'none');
+		        document.getElementById('submit-button').style.display = 'none';
+		      } catch (error) {
+		        alert("Error submitting form: " + error);
+		      }
+		    });
+ 	</script>
+
+
+
+
+
+</body>
+</html>
+
